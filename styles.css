@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(252, 253, 255);
+    background-color: burlywood;
+  }
+
+nav ul li{
+  list-style-type: none;
+  display: flex;
+  
+}
