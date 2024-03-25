@@ -1,4 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
+
 div input{
     display: block;
     margin-bottom: 10px;
-}
+    font-size: 24px;
+    }
+
+    div button{
+        font-size: 24px;
+    }
+
+    p {
+        float: right;
+        margin-top: -px;
+    }

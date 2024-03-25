@@ -1,6 +1,6 @@
-// Function to calculate grades for 5 subjects
 function getGrade() {
     let grades = [];
+    let totalMarks = 0;
     
     // Loop through each subject
     for (let i = 1; i <= 5; i++) {
@@ -24,15 +24,37 @@ function getGrade() {
         // Get the name of the current subject
         let subjectName = document.getElementById('marks' + i).getAttribute('name');
         
-        // Store the subject name and grade in the grades array
-        grades.push({ name: subjectName, grade: grade });
+        // Store the subject name, marks, and grade in the grades array
+        grades.push({ name: subjectName, marks: subjectMarks, grade: grade });
+        
+        // Accumulate total marks
+        totalMarks += subjectMarks;
     }
 
-    // Create a result string to display the grades
+    // Calculate the average marks
+    const averageMarks = totalMarks / 5;
+
+    // Determine the total grade based on the average marks
+    let totalGrade = '';
+    if (averageMarks > 79) {
+        totalGrade = 'A';
+    } else if (averageMarks >= 60) {
+        totalGrade = 'B';
+    } else if (averageMarks >= 50) {
+        totalGrade = 'C';
+    } else if (averageMarks >= 40) {
+        totalGrade = 'D';
+    } else {
+        totalGrade = 'E';
+    }
+
+    // Create a result string to display the grades, total marks, and total grade
     let result = '';
     for (let i = 0; i < 5; i++) {
         result += `${grades[i].name}: ${grades[i].grade}<br>`;
     }
+    result += `Total Marks: ${totalMarks}<br>`;
+    result += `Total Grade: ${totalGrade}`;
 
     // Display the result in the HTML element with id 'result'
     document.getElementById('result').innerHTML = result;
