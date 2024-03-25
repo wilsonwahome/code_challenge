@@ -12,11 +12,11 @@
     <div>
         <h1>Student Grade generator</h1>
         <label>Enter Marks:</label><br>
-        <input type="number" id="marks1" name="Python" placeholder="Python">
-        <input type="number" id="marks2" name="JavaScript" placeholder="JavaScript">
-        <input type="number" id="marks3" name="Ruby" placeholder="Ruby">
-        <input type="number" id="marks4" name="Java" placeholder="Java">
-        <input type="number" id="marks5" name="Rust" placeholder="Rust">
+        <input type="number" id="marks1" name="Python" placeholder="Python" min="0" max="100">
+        <input type="number" id="marks2" name="JavaScript" placeholder="JavaScript" min="0" max="100">
+        <input type="number" id="marks3" name="Ruby" placeholder="Ruby" min="0" max="100">
+        <input type="number" id="marks4" name="Java" placeholder="Java" min="0" max="100">
+        <input type="number" id="marks5" name="Rust" placeholder="Rust" min="0" max="100">
         <button onclick="getGrade()">Grade</button>
         <p id="result"></p>
     </div>
