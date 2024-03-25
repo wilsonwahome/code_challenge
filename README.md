@@ -42,3 +42,8 @@ This program calculates an individual's net salary based on their basic salary a
 1. Run the program.
 2. Input the basic salary and benefits when prompted.
 3. The program will output the payee, NHIF deductions, NSSF deductions, gross salary, and net salary.
+
+### Languages used 
+1. HTML
+2. CSS
+3. JavaScript
